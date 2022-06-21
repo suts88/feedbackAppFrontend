@@ -1,0 +1,35 @@
+//google font
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;600;700&display=swap');
+
+
+//breakpoints
+$mobile-bp: 408px;
+$pad-bp: 600px;
+$desktop-bp: 1250px;
+
+//colors
+$purple: #AD1FEA;
+$blue: #4661E6;
+$navyblue_dark: #373F68;
+$white: #FFFFFF;
+$accentgrey: #F2F4FF;
+$grey: #F7F8FD;
+$navyblue_light: #3A4374;
+$bluegrey: #647196;
+$orange: #F49F85;
+$babyblue: #62BCFA;
+
+
+//mixins
+@mixin default-small-button($color){
+  background-color: $color;
+  height: 44px;
+  width: 158px;
+  border-radius: 10px;
+  color: $accentgrey;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4em;
+  line-height: 2em;
+  text-align: center;
+}

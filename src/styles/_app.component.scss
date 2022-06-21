@@ -1,3 +1,4 @@
-div{
-  background-color: greenyellow;
+@use './global-styles' as gs;
+button{
+  @include gs.default-small-button(gs.$blue);
 }
