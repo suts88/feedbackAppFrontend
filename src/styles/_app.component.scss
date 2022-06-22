@@ -1,4 +1,0 @@
-@use './global-styles' as gs;
-button{
-  @include gs.default-small-button(gs.$blue);
-}
