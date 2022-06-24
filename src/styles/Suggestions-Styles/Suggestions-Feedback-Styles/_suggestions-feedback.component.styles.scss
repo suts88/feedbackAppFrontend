@@ -1,0 +1,99 @@
+@use '../../global-styles' as gs;
+
+
+.suggestions-feedback {
+  width: 33em;
+  height: 20em;
+  background: gs.$white;
+  border-radius: 1em;
+  margin: 2em auto 0;
+
+  &-text {
+    padding-left: 2.5em;
+  }
+
+  &-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 2.9em;
+    letter-spacing: -0.180556px;
+    color: gs.$navyblue_light;
+    padding-top: 1.5em;
+  }
+
+  &-description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    color: gs.$navyblue_light;
+  }
+
+  &-category-box {
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    width: 111px;
+    height: 30px;
+    background: gs.$accentgrey;
+    border-radius: .8em;
+    display: flex;
+
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.3rem;
+      line-height: 1.9em;
+      color: gs.$blue;
+      margin: auto;
+    }
+  }
+
+  &-box-group {
+    display: grid;
+    grid-template-areas: 'upvotes comments';
+  }
+
+  &-upvote-box {
+    grid-template: 'upvotes';
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    width: 6.9em;
+    height: 3.2em;
+    background: gs.$accentgrey;
+    border-radius: .8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: gs.$navyblue_light;
+    }
+  }
+
+  &-comments-group {
+    grid-template: 'comments';
+    margin-right: 1.5em;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    p {
+      margin-left: .5em;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: gs.$navyblue_light;
+    }
+  }
+}

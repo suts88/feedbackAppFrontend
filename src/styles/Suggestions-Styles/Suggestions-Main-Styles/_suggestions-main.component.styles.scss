@@ -1,0 +1,9 @@
+@use '../Suggestions-Menu-Styles/suggestions-menu.component.styles';
+@use '../Suggestions-Add-Tab-Styles/suggestions-add-tab.component.styles';
+@use '../Suggestions-Feedback-List-Styles/suggestions-feedback-list.component.styles';
+@use '../Suggestions-Feedback-Styles/suggestions-feedback.component.styles';
+@use '../../global-styles' as gs;
+
+.content{
+  background: gs.$accentgrey;
+}

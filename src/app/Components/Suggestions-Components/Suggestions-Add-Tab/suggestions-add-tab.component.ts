@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'feedbackapp-Suggestions-Add-Tab',
+  selector: 'feedbackapp-suggestions-add-tab',
   template: `
     <div class="suggestions-add-tab">
       <label for="sort">Sort by</label>
@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
       <button><img src="../../../../assets/shared/icon-plus.svg" alt=""> Add Feedback</button>
     </div>
   `,
-  styleUrls: ['../../../../styles/Suggestions-Styles/Suggestions-Add-Tab/_suggestions-add-tab.component.styles.scss']
+  styleUrls: ['../../../../styles/Suggestions-Styles/Suggestions-Add-Tab-Styles/_suggestions-add-tab.component.styles.scss']
 })
 export class SuggestionsAddTabComponent implements OnInit {
 

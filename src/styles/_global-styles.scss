@@ -21,8 +21,8 @@ $babyblue: #62BCFA;
 
 
 //mixins
-@mixin default-small-button($color){
-  background-color: $color;
+@mixin default-small-button($bgcolor){
+  background-color: $bgcolor;
   height: 44px;
   width: 158px;
   border-radius: 10px;
@@ -32,4 +32,39 @@ $babyblue: #62BCFA;
   font-size: 1.4em;
   line-height: 2em;
   text-align: center;
+
+  &:hover{
+    opacity: .5;
+  }
 }
+
+@mixin default-button($bgcolor){
+  background-color: $bgcolor;
+  height: 53px;
+  width: 158px;
+  border-radius: 5px;
+  color: $white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4em;
+  line-height: 2em;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+@mixin upvote-box($bgcolor){
+  background-color: $bgcolor;
+  height: 53px;
+  width: 40px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3em;
+  line-height: 1.9em;
+  text-align: center;
+  letter-spacing: -0.180556px;
+  color: $navyblue_light;
+}
+

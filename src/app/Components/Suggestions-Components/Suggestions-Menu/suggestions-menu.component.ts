@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'feedbackapp-Suggestions-Menu',
+  selector: 'feedbackapp-suggestions-menu',
   template: `
     <div class="suggestions-menu">
       <div>
@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
      <ng-template #closed> <img   src="../../../../assets/shared/mobile/icon-close.svg" alt=""></ng-template>
     </div>
   `,
-  styleUrls: ['../../../../styles/Suggestions-Styles/Suggestions-Menu/_suggestions-menu.component.styles.scss']
+  styleUrls: ['../../../../styles/Suggestions-Styles/Suggestions-Menu-Styles/_suggestions-menu.component.styles.scss']
 })
 export class SuggestionsMenuComponent implements OnInit {
 
