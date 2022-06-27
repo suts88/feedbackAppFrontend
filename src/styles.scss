@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use 'styles/app.component.styles';
-
-
+@use 'styles/global-styles' as gs;
 
 * {
   margin: 0;
@@ -19,5 +18,18 @@ body {
 }
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (min-width: gs.$pad-bp) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}

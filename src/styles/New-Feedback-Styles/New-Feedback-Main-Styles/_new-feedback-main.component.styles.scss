@@ -1,7 +1,9 @@
-
-
 @use '../../global-styles' as gs;
+@use '../New-Feedback-Form-Styles/new-feedback-form.component.styles';
 
 .content{
   background: gs.$accentgrey;
+  height: 100%;
+  width: 100%;
 }
+

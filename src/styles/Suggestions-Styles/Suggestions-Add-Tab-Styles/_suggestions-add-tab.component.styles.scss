@@ -42,8 +42,6 @@
 
   button{
     @include gs.default-button(gs.$purple);
-    height: clamp(35px,4vh,55px);
-    width: clamp(140px,4vw,175px);
     margin: 0 2em;
   }
 }

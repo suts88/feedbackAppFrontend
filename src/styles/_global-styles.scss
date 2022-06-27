@@ -23,8 +23,8 @@ $babyblue: #62BCFA;
 //mixins
 @mixin default-small-button($bgcolor){
   background-color: $bgcolor;
-  height: 44px;
-  width: 158px;
+  height: 4.4em;
+  width: 15.8em;
   border-radius: 10px;
   color: $accentgrey;
   font-style: normal;
@@ -40,8 +40,8 @@ $babyblue: #62BCFA;
 
 @mixin default-button($bgcolor){
   background-color: $bgcolor;
-  height: 53px;
-  width: 158px;
+  height: 5.3em;
+  width: 15.8em;
   border-radius: 5px;
   color: $white;
   font-style: normal;

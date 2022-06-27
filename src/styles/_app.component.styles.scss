@@ -1,3 +1,6 @@
 @use './global-styles' as gs;
 @use 'Suggestions-Styles/Suggestions-Main-Styles/suggestions-main.component.styles';
 @use 'New-Feedback-Styles/New-Feedback-Main-Styles/new-feedback-main.component.styles';
+@use 'Feedback-Detail-Styles/Feedback-Detail-Main-Styles/feedback-detail-main.component.styles';
+@use 'Feedback-Detail-Styles/Feedback-Detail-Comments-List-Styles/feedback-detail-comments-list.component.styles';
+@use 'General-Styles/navigate-back.component.styles';

@@ -1,0 +1,45 @@
+@use '../../global-styles' as gs;
+
+.comments-list{
+  background: gs.$white;
+  border-radius: 1em;
+  margin: 2em auto 0;
+  width: 33em;
+
+
+  &-header{
+    padding-left: 2.5em;
+
+    p{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.9em;
+      letter-spacing: -0.180556px;
+      color: gs.$navyblue_light;
+      padding-top: .75em;
+    }
+  }
+
+  &-box{
+    padding: 1.5em;
+
+    p{
+      color: gs.$bluegrey;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.3rem;
+      line-height: 1.9em;
+    }
+
+    hr{
+      color: gs.$accentgrey;
+      margin-top: 1.5em;
+    }
+
+    h4{
+      color: gs.$blue;
+      padding: 1em;
+    }
+  }
+}

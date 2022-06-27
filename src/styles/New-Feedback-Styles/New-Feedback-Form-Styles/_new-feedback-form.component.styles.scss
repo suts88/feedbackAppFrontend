@@ -1,0 +1,95 @@
+@use '../../global-styles' as gs;
+
+.new-feedback-form {
+  background: gs.$white;
+  margin: 3em 2em;
+  border-radius: 10px;
+  width: 90%;
+
+  &-header {
+    margin: 1em auto 1em 1.5em;
+    img {
+      width: 4em;
+      transform: translateY(-2em);
+    }
+
+    p {
+      color: gs.$navyblue_light;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.6em;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  &-form {
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+
+      input ,select{
+        height: 4.8em;
+        width: 27em;
+        max-width: 90%;
+        justify-content:center;
+        align-items: center;
+        background: gs.$grey;
+        border: none;
+        margin: 1em auto 1em 1.5em;
+
+      }
+
+      textarea{
+        width: 27.9em;
+        height: 12em;
+        max-width: 90%;
+        justify-content:center;
+        align-items: center;
+        background: gs.$grey;
+        border: none;
+        margin: 1em auto 1em 1.5em;
+      }
+
+      p:first-of-type {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 1.9em;
+        letter-spacing: -0.180556px;
+        color: gs.$navyblue_light;
+        margin-top: 1em;
+        margin-left: 1.5em;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 1.5em;
+        color: gs.$bluegrey;
+        margin-left: 1.5em;
+      }
+    }
+
+    &-button-group{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      margin-top: 1.5em;
+
+      button:first-of-type{
+        @include gs.default-small-button(gs.$purple);
+        width: 90%;
+      }
+
+      button{
+        @include gs.default-small-button(gs.$navyblue_light);
+        margin-top: 1.5em;
+        width: 90%;
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+}

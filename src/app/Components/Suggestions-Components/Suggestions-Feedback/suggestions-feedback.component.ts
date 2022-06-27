@@ -4,7 +4,7 @@ import {IFeedbackModel} from 'src/Models/IFeedbackModel';
 @Component({
   selector: 'feedbackapp-suggestions-feedback',
   template: `
-    <div class="suggestions-feedback">
+    <div class="suggestions-feedback" *ngIf="feedback; else elseBlock">
       <div class="suggestions-feedback-text">
         <p class="suggestions-feedback-title">{{feedback.feedbackTitle}}</p>
         <p class="suggestions-feedback-description">{{feedback.description}}</p>
@@ -23,6 +23,9 @@ import {IFeedbackModel} from 'src/Models/IFeedbackModel';
         </div>
       </div>
     </div>
+    <ng-template #elseBlock>
+      <h1>No Content!</h1>
+    </ng-template>
   `,
   styleUrls: ['../../../../styles/Suggestions-Styles/Suggestions-Feedback-Styles/_suggestions-feedback.component.styles.scss']
 })
@@ -38,7 +41,7 @@ export class SuggestionsFeedbackComponent implements OnInit {
 
   ngOnInit(): void {
     this.commentsLength = this.feedback?.comments?.length ? this.feedback.comments.length : 0;
-    //console.log(this.feedback.comments?.length);
+
   }
 
 }

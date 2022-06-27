@@ -1,0 +1,29 @@
+@use '../global-styles' as gs;
+
+.navigate-back{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  margin-bottom: 1.5em;
+
+  &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  img{
+    width: 10px;
+    height: 10px;
+  }
+
+  p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.9em;
+    color: gs.$bluegrey;
+    margin-left: .5em;
+  }
+}
